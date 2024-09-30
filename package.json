@@ -3,10 +3,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/mistrs2p"
   },
-  "version": "1.0.2",
+  "version": "1.0.7",
   "description": "Shared React Library for PRIMEREACT ",
   "scripts": {
-    "rollup": "rollup -c "
+    "rollup": "rimraf dist && rollup -c"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,7 @@
     "@rollup/plugin-typescript": "^12.1.0",
     "@types/react": "^18.3.10",
     "@types/rollup-plugin-peer-deps-external": "^2.2.5",
+    "rimraf": "^6.0.1",
     "rollup": "^4.22.5",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
@@ -26,6 +27,7 @@
     "typescript": "^5.6.2"
   },
   "peerDependencies": {
+    "primeicons": "^7.0.0",
     "primereact": "^10.8.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
